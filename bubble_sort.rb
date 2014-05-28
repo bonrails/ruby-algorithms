@@ -1,4 +1,5 @@
 class Array
+
   def bubblesort!
     each_index do |j|
       j.upto(length - 1) do |i|
@@ -7,6 +8,7 @@ class Array
     end
     self
   end
+
 end
 some_array = [9,4,3,5,7,8,5]
 some_array.bubblesort!
