@@ -1,9 +1,7 @@
 # Selection sort O(n^2)
 
 class  Array
-
-  def selecttion_sort!
-
+  def selection_sort!
     (length - 1 ).times do |i|
       min_index = i
 
@@ -19,4 +17,4 @@ end
 
 a = [91,81,23,62,1,2,5]
 
-p a.selecttion_sort!
+p a.selection_sort!
