@@ -19,7 +19,7 @@ class Queue
 
   def dequeue
     if @queue.empty?
-     "queue is empty"
+    p  "queue is empty"
     else
      @queue.delete_at(0)
     end
@@ -31,12 +31,12 @@ class Queue
 
 end
 
-q=Queue.new()
+q=Queue.new(3)
 q.enqueue(8)
 q.enqueue(9)
 q.enqueue(9)
 q.dequeue
 q.dequeue
 q.dequeue
-x=q.dequeue
-p x
+q.dequeue
+p q.print
