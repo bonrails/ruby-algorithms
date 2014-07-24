@@ -3,7 +3,7 @@ require 'pry'
 class Queue
   def initialize()
     @queue=Array.new(size)
-    head= size-1 #2
+    head= -1
     tail = 0
   end
 
@@ -13,6 +13,7 @@ class Queue
     else
       @queue[tail]=x
       tail= tail+1
+      head= head+1
     end
 
   end
